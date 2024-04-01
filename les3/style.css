@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+.header {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-flex ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header-flex ul li:hover {
+  cursor: pointer;
+transition: all 0.5s ease;
+color: darkblue;
+
+
+
+
+
+
+
+}
