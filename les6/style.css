@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --little-size: 15px;
+}
+
+.header {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.header-flex ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+@media (hover) {
+  .header-flex ul li:hover {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: darkblue;
+  }
+}
+
+.cards {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: var(--black-color);
+
+  border-radius: 12px;
+  height: auto;
+  overflow: hidden;
+}
+.card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.card h2 {
+  text-align: center;
+  color: white;
+  padding: 0 10px;
+}
+.card p {
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+.card div {
+  border: 1px solid var(--white-color);
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 660px) {
+  .card h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .header-flex ul li {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header-flex ul li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 440px) {
+  .card h2 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 330px) {
+  .header-flex ul li {
+    font-size: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .card h2 {
+    font-size: 10px;
+  }
+}
+
+.txt5 {
+  text-shadow: -3px 13px 1px rgba(255, 0, 201, 1);
+}
+
+footer {
+  color: white;
+  background-color: rgba(230, 255, 0, 1);
+  background-image: linear-gradient(
+    210deg,
+    rgba(230, 255, 0, 1) 16%,
+    rgba(0, 0, 0, 1) 79%
+  );
+}
+
+.footer {
+  text-align: center;
+  padding-left: 80px;
+  padding-right: 20px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.theme {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#txtfottheme {
+  color: white;
+}
+
+.button{
+  height: 50vh;
+  background-image: url("https://www.interfax.ru/ftproot/photos/photostory/2022/04/29/week/week7_1100.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.tana {
+  color: #000000;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px black;
+  margin-bottom: 25px
+}
+.sec2_btn {
+    padding: 8px 12px ;
+    width: 300px ;
+    background-color: #000000;
+
+
+
+
+}
+.sec2_img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    object-fit: cover;
+    left: -100px;
+    top: 20px;
+    transition: left 0,5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
