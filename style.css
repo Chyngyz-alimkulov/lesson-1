@@ -1,27 +1,11 @@
-.title {
-    text-align: center;
-    font-size: 30px;
-    line-height: 30px;
-}
-.div_an {
-    height: 300px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0YvnMwM6_x_6gH9FixWzRjFl-XXw53iDhRhC-ThJKMTfdr3geW-S2YmB32Q&s);
-    background-size: cover;
-    max-width: 600px;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* div {
+    font-family: "Oswald", sans-serif;
+} */
+
+.container {
+    max-width: 1100px;
     margin: 0 auto;
-    margin-bottom: 200px;
-}    
-.div_an.first {
-    margin-top: 170px;
+    padding: 0 20px;
 }
-.sigma {
-    width: 10px;
-
-}
-
-
-
-
-
-
-
