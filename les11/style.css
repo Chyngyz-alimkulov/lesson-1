@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Bitter", serif;
+    background-color: #EEEFF1;
+}
+.header {
+background-color: #EEEFF1;
+
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px; 
+    margin-bottom: 130px;
+}
+.header-flex ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    
+  }
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tana {
+    color: blue;
+    font-weight: 700;
+    font-size: 50px;
+  }
+.txtfottheme {
+color: blue;
+
+
+}
+.img{
+     margin-left: 200px; 
+     margin-right: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    
+}
+.card{
+width:90%;
+}
+.amir{
+    color:
+    #727272;
+}
+.figma{
+color: white;
+background-color: #34547A;
+width: 225px;
+height: 65px;
+top: 482px;
+left: 975px;
+font-size: 20px;
+margin-top: 50px;
+
+}
+.segma {
+background-color: #EEEFF1;
+
+}
+.ali{
+text-align: center;
+}
+.kama {
+text-align: center;
+padding-left: 400px;
+padding-right: 400px;
+}
+.simka {
+font-size: 45px;    
+margin-bottom: 20px;
+}
+.sabay_card {
+    display: flex;
+    align-items: center;
+    padding-bottom: 70px;
+}
+.sabay {
+    background: #34547A;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 75px;
+  width: 100%;
+}
+.section3 {
+margin-top: 140px;
+}
+
+.wrap_chrge {
+    background-color: #727272;
+    width: 300px;
+    height: 4px;
+} 
+
+.chrge {
+    background-color: aqua;
+    height: 100%;
+    width: 250px;
+}
+.chab {
+    margin-top: 20PX;
+    margin-bottom: 10px;
+}
+.ryeg {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.img_main {
+    width: auto;
+    height: 250px;
+    padding-top: 152px;
+}
+
+.section3_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.efv {
+margin-left: 650px;
+margin-top: 100px;
+}
+.efvni {
+margin-left: 400px;
+margin-right: 400px;
+margin-top: 50px;
+}
+.roiej {
+padding-top: 40px; 
+padding-left: 400px;
+margin-bottom: 100px;
+}
+.dcwn {
+width: 100vw;
+height: auto;
+}
+.cknnlck {
+width: 300px;
+
+
+}
+.sjcbv {
+background-color: white;
+display: flex;
+justify-content: center;
+}
