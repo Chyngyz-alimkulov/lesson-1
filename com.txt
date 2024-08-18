@@ -1,0 +1,21 @@
+Установка библиотеки
+pip install *название_библиотеки*
+
+очистка терминала 
+cls
+
+создать виртуальное окружение
+py -m venv venv
+
+активация виртуальной среды .\venv\Scripts\activate
+
+деактивировать venv
+deactivate
+
+запись зависимостей и создание файла зависимостей 
+pip freeze > requirements
+
+установить все из  файла зависимостей 
+pip install -r requirements.txt 
+
+pip uninstall *имя_библиотеки*

@@ -1,7 +1,4 @@
-# from defs import *
+from art import text2art
 
-
-# print("Тут начинается игра: ")
-
-# say_hello()
-# name_def(2871)
+text_to_art = input("Enter any text: ")
+print(text2art('SEBAB KEBAB'))
