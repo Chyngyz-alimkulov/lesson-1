@@ -1,74 +1,89 @@
-# x = y = z = 0
+from collections import deque
 
-# print(x, y, z)
+d = deque()
+d.append(1)
+d.append(2)
+d.appendleft(0)
+d.appendleft(-1)
+print(d)
 
+print(d.pop())
+print(d.pop())
+print(d.pop())
+print(d)
 
+d.extend([8, 8, 8])
+d.extendleft([1, 2, 3])
+print(d)
 
+d.clear()
+print(d)
 
+stack = deque()
 
+stack.append(1)
+stack.append(2)
+stack.append(3)
 
-# a, = b, = c, = 10, 20, 30
+print(f"Стек последобавления элементов - {stack}")
 
+print(f"удаление элемента {stack.pop()}")
+print(f"удаление элемента {stack.pop()}")
 
-
-
-# a, = b, = c, = [10, 20, 30]
-
-# print(a, b, c)
-
-# a, *b, c = [1, 2]
-
-# print(a)
-# print(b)
-# print(c)
-
-# def hello(first_name, second_name):
-#     print(f"Hello {first_name} { second_name}!")
-
-# hello("John", "Bobrovski")
-
-# def hello(*args):
-#     print(args)
-#     for name in args:
-#         print(f"Hello {name}!")
-
-# hello('alex', ' Stela', 'John', 'Danila')
-
-# def user_info(**kwargs):
-#     print(kwargs)
-
-# print(name='Stiv', age=20, city="Bishkek")
+print(stack)
 
 
-# my_dict = {"key": "value", "key1": "value"}
-# phoneBook = {"mom": "090909908", "dad": "18923018"}
 
-# phoneBook["friend"] = "00830284023"
 
-# print(phoneBook["friend"])
 
-# phoneBook['mom'] = "1111111111"
 
-# print(phoneBook)
-# def sum(a):
-#     pass
 
-# phoneBook = {"mom": "09912471", "dad": "92193120"}
-# print(phoneBook.keys())
-# print(phoneBook.values())
-# print(phoneBook.items())
 
-# def user_info(**kwargs):
-#     for key, value in kwargs.items():
-#         print(f"Ключ: {key}, Значение: {value}")
 
-# user_info(name="Alex", age=14)
 
-str1 = "pqdnsqpcn qonqwccqpoxq qconwqondqd qpoqm"
-str2 = ";qmdosnoqinc qcqijnq icsosnq c qsoqs"
-str3 = "cpnsqincqspqncqsps sa csakaso alckaa"
-str4 = "oncoqnosanASPLAA ASMOS  pocmsa"
-str5 = ""
 
-def count_letters(string):
-    g_let = "eoekaoi"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def validate(s):
+    # Создаем стек на основе deque() для эфктивности 
+    stack = deque()
+    # Создаем словарь ключ_значения с скобками для отслеживания правильности
+    br = {")": "(", "[": "]", "}": "{}"}
+    # перебираем каждую скобку из "s"
+    for char in s:
+        # если скобка является открывающей
+        if char in br.values():
+            # добавляем в стек
+            stack.append(char)
+            # если скобка является закрывающей
+        elif char in br.keys():
+            # если стак пустой или скобка не
+            # правильная по отношению к последнейв стеке
+            if not stack or stack.pop() != br[char]:
+                # возвращаяем false
+                return False
+    
+    # если стек пустой после проверки возврощаем true
+    return not stack
+print(validate("({[]})"))
+print(validate("({[}"))
